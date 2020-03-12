@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.hcl.training.sbflightbooking.exception.FlightNotException;
 import com.hcl.training.sbflightbooking.request.FlightDetailsRequest;
 import com.hcl.training.sbflightbooking.service.FlightBookingServiceImpl;
 ;
@@ -22,6 +23,11 @@ public class FlightBookingController {
 	
 	@PostMapping("/save")
 	public ResponseEntity<?> saveEmployee(@Valid @RequestBody FlightDetailsRequest request) {
+		try {
+			
+		}catch(Exception e) {
+			
+		}
 		FlightDetailsRequest employee = flightService.saveFlightInfo(request);
 		return ResponseEntity.ok().body(employee);
 	}

@@ -13,7 +13,7 @@ public class FlightDetailsRequest {
 	
 	private Long date;
 	
-	private long fareAmt;
+	private Long fareAmt;
 	
 	private FlightBookingDetailsRequest fltbooking;
 
@@ -50,11 +50,11 @@ public class FlightDetailsRequest {
 	}
 
 
-	public long getFareAmt() {
+	public Long getFareAmt() {
 		return fareAmt;
 	}
 
-	public void setFareAmt(long fareAmt) {
+	public void setFareAmt(Long fareAmt) {
 		this.fareAmt = fareAmt;
 	}
 

@@ -1,6 +1,6 @@
 package com.hcl.training.sbflightbooking.exception;
 
-public class FlightNotException extends RuntimeException {
+public class FlightNotException extends Exception {
 	private static final long serialVersionUID = 1L;
 	private String errorMessage;
 
