@@ -1,6 +1,7 @@
 package com.hcl.training.sbflightbooking.entity;
 
 import java.sql.Timestamp;
+import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -24,7 +25,7 @@ public class FlightDetailsEntity {
 	@Column(name = "availSeats")
 	private long seats;
 	
-	private Timestamp date;
+	private Date date;
 	
 	@Column(name="pairamount")
 	private long fareAmt;
@@ -72,14 +73,16 @@ public class FlightDetailsEntity {
 		this.seats = seats;
 	}
 
-	
-
-	public Timestamp getDate() {
+	public Date getDate() {
 		return date;
 	}
 
-	public void setDate(Timestamp date) {
+	public void setDate(Date date) {
 		this.date = date;
+	}
+
+	public void setFid(Long fid) {
+		this.fid = fid;
 	}
 
 	public long getFareAmt() {

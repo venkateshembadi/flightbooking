@@ -1,6 +1,5 @@
 package com.hcl.training.sbflightbooking.request;
 
-import java.sql.Timestamp;
 
 public class FlightDetailsRequest {
 	
@@ -12,7 +11,7 @@ public class FlightDetailsRequest {
 	
 	private long seats;
 	
-	private Timestamp date;
+	private Long date;
 	
 	private long fareAmt;
 	
@@ -50,13 +49,6 @@ public class FlightDetailsRequest {
 		this.seats = seats;
 	}
 
-	public Timestamp getDate() {
-		return date;
-	}
-
-	public void setDate(Timestamp date) {
-		this.date = date;
-	}
 
 	public long getFareAmt() {
 		return fareAmt;
@@ -72,6 +64,14 @@ public class FlightDetailsRequest {
 
 	public void setFltbooking(FlightBookingDetailsRequest fltbooking) {
 		this.fltbooking = fltbooking;
+	}
+
+	public Long getDate() {
+		return date;
+	}
+
+	public void setDate(Long date) {
+		this.date = date;
 	}
 
 	

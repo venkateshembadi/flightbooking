@@ -23,8 +23,8 @@ public class FlightBookingServiceImpl implements FlightBookingService {
 				entity.setDestination(flight.getDestination());
 			if(StringUtils.isNotBlank(flight.getAirline()))
 				entity.setAirline(flight.getAirline());
-			if(flight.getDate() !=null) 
-				entity.setDate(flight.getDate());	
+			//if(flight.getDate() !=null) 
+				//entity.setDate(flight.getDate());	
 			
 		}
 		return null;
