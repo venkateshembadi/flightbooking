@@ -1,4 +1,4 @@
-package com.hcl.training.sbflightbooking.exception;
+package com.training.sbflightbooking.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

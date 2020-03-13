@@ -1,4 +1,4 @@
-package com.hcl.training.sbflightbooking.request;
+package com.training.sbflightbooking.request;
 
 import java.sql.Timestamp;
 
@@ -8,9 +8,7 @@ public class FlightBookingDetailsRequest {
 
 	private Timestamp bookingDate;
 
-	private FlightDetailsRequest flightDetails;
-
-	private UserDetailsRequest userDetails;
+	private PassengerDetails userDetails;
 
 	public String getMealstatus() {
 		return mealstatus;
@@ -28,19 +26,13 @@ public class FlightBookingDetailsRequest {
 		this.bookingDate = bookingDate;
 	}
 
-	public FlightDetailsRequest getFlightDetails() {
-		return flightDetails;
-	}
+	
 
-	public void setFlightDetails(FlightDetailsRequest flightDetails) {
-		this.flightDetails = flightDetails;
-	}
-
-	public UserDetailsRequest getUserDetails() {
+	public PassengerDetails getUserDetails() {
 		return userDetails;
 	}
 
-	public void setUserDetails(UserDetailsRequest userDetails) {
+	public void setUserDetails(PassengerDetails userDetails) {
 		this.userDetails = userDetails;
 	}
 

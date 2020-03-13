@@ -1,4 +1,4 @@
-package com.hcl.training.sbflightbooking.entity;
+package com.training.sbflightbooking.entity;
 
 import java.sql.Timestamp;
 
@@ -20,7 +20,7 @@ public class FlightBookingDetails {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long fbid;
+	private Long bid;
 
 	private String mealstatus;
 
@@ -28,16 +28,12 @@ public class FlightBookingDetails {
 	private Timestamp bookingDate;
 
 	@OneToOne
-	@JoinColumn(name = "flightid")
+	@JoinColumn(name = "fid")
 	private FlightDetailsEntity flightDetails;
 
 	@ManyToOne(fetch = FetchType.LAZY, optional = false)
 	@JoinColumn(name = "uid")
 	private UserDetails userDetails;
-
-	public long getFbid() {
-		return fbid;
-	}
 
 	public UserDetails getUserDetails() {
 		return userDetails;
@@ -45,10 +41,6 @@ public class FlightBookingDetails {
 
 	public void setUserDetails(UserDetails userDetails) {
 		this.userDetails = userDetails;
-	}
-
-	public void setFbid(long fbid) {
-		this.fbid = fbid;
 	}
 
 	public String getMealstatus() {

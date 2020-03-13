@@ -1,4 +1,4 @@
-package com.hcl.training.sbflightbooking;
+package com.training.sbflightbooking;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -11,7 +11,7 @@ import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @SpringBootApplication
-@ComponentScan(basePackages= {"com.dbs.training.service.EmployeServiceImpl","com.dbs.training.controller","com.dbs.training.service"})
+@ComponentScan(basePackages= {"com.training.sbflightbooking","com.training.sbflightbooking.service"})
 @EnableSwagger2
 public class SbflightbookingApplication {
 

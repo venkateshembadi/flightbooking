@@ -1,6 +1,5 @@
-package com.hcl.training.sbflightbooking.entity;
+package com.training.sbflightbooking.entity;
 
-import java.sql.Timestamp;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -25,7 +24,7 @@ public class FlightDetailsEntity {
 	@Column(name = "availSeats")
 	private long seats;
 	
-	private Date date;
+	private String bdate;
 	
 	@Column(name="pairamount")
 	private long fareAmt;
@@ -33,12 +32,9 @@ public class FlightDetailsEntity {
 	@OneToOne(mappedBy = "flightDetails")
 	private FlightBookingDetails fltbooking;
 
-	public long getFid() {
+	
+	public Long getFid() {
 		return fid;
-	}
-
-	public void setFid(long fid) {
-		this.fid = fid;
 	}
 
 	public String getAirline() {
@@ -73,12 +69,13 @@ public class FlightDetailsEntity {
 		this.seats = seats;
 	}
 
-	public Date getDate() {
-		return date;
+	
+	public String getBdate() {
+		return bdate;
 	}
 
-	public void setDate(Date date) {
-		this.date = date;
+	public void setBdate(String bdate) {
+		this.bdate = bdate;
 	}
 
 	public void setFid(Long fid) {

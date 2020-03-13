@@ -1,4 +1,4 @@
-package com.hcl.training.sbflightbooking.entity;
+package com.training.sbflightbooking.entity;
 
 import java.util.List;
 

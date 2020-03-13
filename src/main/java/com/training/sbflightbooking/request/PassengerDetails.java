@@ -1,15 +1,16 @@
-package com.hcl.training.sbflightbooking.request;
+package com.training.sbflightbooking.request;
 
-public class UserDetailsRequest {
+public class PassengerDetails {
 	
-	private long uid;
+	private Long uid;
 	private String uname;
 	private String gender;
 	
-	public long getUid() {
+	
+	public Long getUid() {
 		return uid;
 	}
-	public void setUid(long uid) {
+	public void setUid(Long uid) {
 		this.uid = uid;
 	}
 	public String getUname() {

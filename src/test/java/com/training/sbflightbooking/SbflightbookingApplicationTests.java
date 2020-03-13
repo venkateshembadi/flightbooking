@@ -1,4 +1,4 @@
-package com.hcl.training.sbflightbooking;
+package com.training.sbflightbooking;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

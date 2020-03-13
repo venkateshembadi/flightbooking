@@ -1,4 +1,4 @@
-package com.hcl.training.sbflightbooking.exception;
+package com.training.sbflightbooking.exception;
 
 public class ErrorResponse {
 	

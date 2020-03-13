@@ -1,4 +1,4 @@
-package com.hcl.training.sbflightbooking.request;
+package com.training.sbflightbooking.request;
 
 
 public class FlightDetailsRequest {
@@ -9,9 +9,9 @@ public class FlightDetailsRequest {
 	
 	private String destination;
 	
-	private long seats;
+	private Long seats;
 	
-	private Long date;
+	private Long bookingDate;
 	
 	private Long fareAmt;
 	
@@ -41,14 +41,7 @@ public class FlightDetailsRequest {
 		this.destination = destination;
 	}
 
-	public long getSeats() {
-		return seats;
-	}
-
-	public void setSeats(long seats) {
-		this.seats = seats;
-	}
-
+	
 
 	public Long getFareAmt() {
 		return fareAmt;
@@ -66,13 +59,22 @@ public class FlightDetailsRequest {
 		this.fltbooking = fltbooking;
 	}
 
-	public Long getDate() {
-		return date;
+	public Long getBookingDate() {
+		return bookingDate;
 	}
 
-	public void setDate(Long date) {
-		this.date = date;
+	public void setBookingDate(Long bookingDate) {
+		this.bookingDate = bookingDate;
 	}
 
+	public Long getSeats() {
+		return seats;
+	}
+
+	public void setSeats(Long seats) {
+		this.seats = seats;
+	}
 	
+	
+
 }

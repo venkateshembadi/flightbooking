@@ -1,4 +1,4 @@
-package com.hcl.training.sbflightbooking.exception;
+package com.training.sbflightbooking.exception;
 
 public class FlightNotException extends Exception {
 	private static final long serialVersionUID = 1L;
